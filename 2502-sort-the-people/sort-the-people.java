@@ -11,14 +11,15 @@ class Solution {
         }
 
         // sort heights descending
-        Arrays.sort(heights);
+        Arrays.sort(heights);//165,170,180
 
         String[] result = new String[names.length];
         int index = 0;
 
         // traverse from largest height
         for (int i = heights.length - 1; i >= 0; i--) {
-            result[index++] = map.get(heights[i]);
+            result[index++] = map.get(heights[i]); //map.get(180) → "Mary"
+        //['mary',_ , _]
         }
 
         return result;
